@@ -1,0 +1,4 @@
+node_modules
+npm-debug.log
+credentials.json
+local-options.json
