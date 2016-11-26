@@ -1,6 +1,6 @@
 # grunt-google-cloud
 
-> A Grunt plugin which acts as a wrapper for [https://github.com/GoogleCloudPlatform/google-cloud-node](google-cloud).
+> A Grunt plugin which acts as a wrapper for [google-cloud](https://github.com/GoogleCloudPlatform/google-cloud-node).
 
 ## Getting Started
 This plugin requires Grunt `^1.0.1`
