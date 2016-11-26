@@ -19,7 +19,7 @@ grunt.loadNpmTasks('grunt-google-cloud');
 
 ## Supported Services
 
-The first version of this plugin current only supports [#google-cloud-storage](Google Cloud Storage).
+The first version of this plugin current only supports [Google Cloud Storage](#google-cloud-storage).
 
 ## Google Cloud Storage
 
@@ -57,7 +57,7 @@ Authentication is provided by one of three methods. You can choose to provide ei
 
 #### `options.keyFilename` (String)
 
-The path to your key file. [https://github.com/GoogleCloudPlatform/google-cloud-node#authentication](More information on key files).
+The path to your key file. [More information on key files](https://github.com/GoogleCloudPlatform/google-cloud-node#authentication).
 
 #### `options.credentials` (Object)
 
@@ -65,7 +65,7 @@ The contents of your key file. E.g.
 
 ```js
 options: {
-  credentials: grunt.file.readJSON('/Users/Luke/googlecloud.json'),`
+  credentials: grunt.file.readJSON('credentials.json'),`
 }
 ```
 
