@@ -2,6 +2,7 @@ const storage = require('@google-cloud/storage');
 const async = require('async');
 const path = require('path');
 const merge = require('deepmerge');
+const mime = require('mime-types');
 
 module.exports = function(grunt) {
 
@@ -80,10 +81,15 @@ module.exports = function(grunt) {
     files.forEach((file) => {
       asyncTasks.push((callback) => {
 
+        // Set corrent content type
+        let metadata = merge(options.metadata, {
+          contentType: mime.contentType(path.extname(file.src)),
+        });
+
         bucket.upload(file.src, {
           destination: file.dest,
           gzip: options.gzip,
-          metadata: options.metadata
+          metadata
         }, (err, file) => {
           if (err) {
             grunt.fail.warn(err);
