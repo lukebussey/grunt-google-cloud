@@ -83,7 +83,7 @@ module.exports = function(grunt) {
 
         // Set corrent content type
         let metadata = merge(options.metadata, {
-          contentType: mime.contentType(path.extname(file.src)),
+          contentType: mime.contentType(path.extname(file.src))  || 'application/octet-stream'
         });
 
         bucket.upload(file.src, {
