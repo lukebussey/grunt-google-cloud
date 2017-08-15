@@ -38,9 +38,9 @@ module.exports = function(grunt) {
       storageOptions.credentials = options.credentials;
     } else if (options.clientEmail && options.privateKey) {
       storageOptions.credentials = {
-        client_email: options.clientEmail,
-        private_key: options.privateKey
-      }
+        client_email: options.clientEmail, // eslint-disable-line camelcase
+        private_key: options.privateKey // eslint-disable-line camelcase
+      };
     }
 
     // Create metadata object containing headers and additional metadata
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
 
         // Set corrent content type
         let metadata = merge(options.metadata, {
-          contentType: mime.contentType(path.extname(file.src)),
+          contentType: mime.contentType(path.extname(file.src))  || 'application/octet-stream'
         });
 
         bucket.upload(file.src, {
