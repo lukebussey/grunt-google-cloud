@@ -1,7 +1,7 @@
 {
   "name": "grunt-google-cloud",
   "description": "A Grunt plugin which acts as a wrapper for google-cloud.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "homepage": "https://github.com/lukebussey/grunt-google-cloud",
   "author": {
     "name": "Luke Bussey",
