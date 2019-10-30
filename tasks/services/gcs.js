@@ -28,7 +28,9 @@ module.exports = function(grunt) {
     }
 
     let storageOptions = {
-      projectId: options.project
+      projectId: options.project,
+      autoRetry: options.autoRetry,
+      maxRetries: options.maxRetries
     };
 
     // Setup authentication
