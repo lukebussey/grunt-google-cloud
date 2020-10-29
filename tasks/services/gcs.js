@@ -15,7 +15,8 @@ module.exports = function(grunt) {
       gzip: true,
       headers: {},
       metadata: {},
-      concurrent: 20
+      concurrent: 20,
+      resumable: true
     });
 
     // Checks
@@ -89,7 +90,8 @@ module.exports = function(grunt) {
         bucket.upload(file.src, {
           destination: file.dest,
           gzip: options.gzip,
-          metadata
+          metadata,
+          resumable: options.resumable
         }, (err, file) => {
           if (err) {
             grunt.fail.warn(err);

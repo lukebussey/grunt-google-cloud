@@ -103,6 +103,10 @@ An object containing additional metadata to set. Default `{}`.
 
 Concurrent uploads to run. Default `20`.
 
+#### `options.resumable` (Boolean)
+
+Defines if uploads should be resumable or not. Default `true`.
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
