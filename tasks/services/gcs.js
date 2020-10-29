@@ -1,4 +1,4 @@
-const storage = require('@google-cloud/storage');
+const { Storage } = require('@google-cloud/storage');
 const async = require('async');
 const path = require('path');
 const merge = require('deepmerge');
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
       metadata: options.metadata
     });
 
-    const gcs = storage(storageOptions);
+    const gcs = new Storage(storageOptions);
 
     const bucket = gcs.bucket(options.bucket);
 
