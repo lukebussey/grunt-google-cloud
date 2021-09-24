@@ -1,4 +1,4 @@
-# grunt-google-cloud
+# boxed-grunt-google-cloud
 
 > A Grunt plugin which acts as a wrapper for [google-cloud](https://github.com/GoogleCloudPlatform/google-cloud-node).
 
@@ -8,13 +8,13 @@ This plugin requires Grunt `^1.0.1`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-google-cloud --save-dev
+npm install boxed-grunt-google-cloud --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled as so inside your Gruntfile:
 
 ```js
-grunt.loadNpmTasks('grunt-google-cloud');
+grunt.loadNpmTasks('boxed-grunt-google-cloud');
 ```
 
 ## Supported Services
