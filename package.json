@@ -1,5 +1,5 @@
 {
-  "name": "boxed-grunt-google-cloud",
+  "name": "@boxed/grunt-google-cloud",
   "description": "A Grunt plugin which acts as a wrapper for google-cloud.",
   "version": "1.0.7",
   "homepage": "https://github.com/giddyinc/grunt-google-cloud",
